@@ -1,0 +1,134 @@
+@media (min-width: 1279px) {
+    nav.min {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1279px) {
+    nav.min {
+        display: none;
+    }
+
+    section.banner {
+        background: conic-gradient(at 31.5% 45%, rgb(187, 19, 165), rgb(215, 230, 3), rgb(36, 0, 240), rgb(187, 19, 165));
+    }
+    section.banner h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 6rem;
+    }
+    header .logo {
+        font-size: 2rem;
+    }
+    nav.big {
+        display: none;
+    }
+    nav.min {
+        display: block;
+        align-self: center;
+    }
+    section.banner {
+        background: conic-gradient(at 29.5% 45%, rgb(187, 19, 165), rgb(215, 230, 3), rgb(36, 0, 240), rgb(187, 19, 165));
+    }
+    section.banner h1 {
+        font-size: 4rem;
+    }
+
+    section.banner button {
+        font-size:1.3rem;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .location {
+        justify-content: center;
+    }
+
+    footer .info {
+        flex-direction: column;
+    }
+
+    footer .info ul li:not(span) {
+        margin-top: 1rem;
+    }
+
+    footer .extras {
+        flex-direction: column;
+    }
+
+    footer .extras ul {
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 1rem auto;
+    }
+
+    footer .extras span {
+        margin-top: 2rem;
+    }
+}
+
+
+@media (max-width: 578px) {
+    header {
+        height: 6rem;
+    }
+    header .logo {
+        font-size: 2rem;
+    }
+    nav.big {
+        display: none;
+    }
+    nav.min {
+        display: block;
+        align-self: center;
+    }
+    section.banner {
+        background: conic-gradient(at 23.5% 44.25%, rgb(187, 19, 165), rgb(215, 230, 3), rgb(36, 0, 240), rgb(187, 19, 165));
+    }
+    section.banner h1 {
+        font-size: 4rem;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    header {
+        height: 6rem;
+    }
+    header .logo {
+        font-size: 2rem;
+    }
+    nav.big {
+        display: none;
+    }
+    nav.min {
+        display: block;
+        align-self: center;
+    }
+    section.banner {
+        background: conic-gradient(at 25.5% 44.5%, rgb(187, 19, 165), rgb(215, 230, 3), rgb(36, 0, 240), rgb(187, 19, 165));
+    }
+
+    section.banner h1 {
+        font-size: 3rem;
+    }
+    
+}
+
+nav.min {
+    font-size: 2rem;
+}
+
+nav.min:hover{
+    color: var(--nav-hover-color);
+    cursor: pointer;
+}

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --nav-hover-color:rgb(0, 174, 255);
+    --footer-hover-color:  rgb(215, 230, 3);
+    --banner-button-color: rgb(187, 19, 165);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: black;
+    height: 8rem;
+}
+
+header .container {
+    display:flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+
+header .logo {
+    font-size: 3rem;
+    display: flex;
+    min-width: fit-content;
+}
+
+
+header .logo div {
+    align-self: center;
+    transform:rotateZ(0deg);
+}
+
+header .logo div:hover {
+    cursor: pointer;
+}
+
+header .logo i {
+    transform:rotateY(0deg);
+}
+
+header .logo i:hover {
+    transform:rotateY(360deg);
+    transition: all 3s ease-in-out;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    font-size: 2rem;
+}
+
+header nav ul li {
+    padding:1rem;
+    /* font-weight: 800; */
+}
+
+header nav ul li:hover {
+    color: var(--nav-hover-color);
+    cursor: pointer;
+}
+
+section.banner {
+    background: conic-gradient(at 30% 45%, rgb(187, 19, 165), rgb(215, 230, 3), rgb(36, 0, 240), rgb(187, 19, 165));
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+section.banner h1 {
+    font-size: 8rem;
+}
+
+section.banner p {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+section.banner button {
+    background-color:  var(--banner-button-color);
+    color: white;
+    border-style: none;
+    font-family: inherit;
+    font-size: 2rem;
+    border-radius: 3rem;
+    padding: 1.5rem 2.5rem;
+    margin-top: 1.5rem;
+    font-weight:600;
+}
+
+section.banner button:hover {
+    background-color: rgb(249, 0, 215);
+    transform: scale(105%, 105%);
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    height: 40rem;
+}
+
+footer section.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 90%;
+    padding: 6rem 0 4rem 0;
+}
+
+footer .logo {
+    font-size: 2rem;
+    min-width: fit-content;
+    padding: 1.5rem 0;
+}
+
+footer .info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    justify-content: space-evenly;
+}
+
+footer .info ul li {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+footer .info ul li:not(span):hover {
+    color: var(--footer-hover-color);
+    cursor: pointer;
+}
+
+footer .info ul li span {
+    color:rgb(197, 195, 195);
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+footer .info ul li span {
+    cursor: text;
+}
+
+
+footer .socials {
+    margin-top: 1rem;
+    flex-grow: 1;
+}
+
+footer .socials ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+footer .socials ul li {
+    font-size: 2.5rem;
+    background-color: rgb(35, 35, 35);
+    height: 5.5rem;
+    width: 5.5rem;
+    margin: 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+footer .socials ul li:hover {
+    color: var(--footer-hover-color);
+    cursor: pointer;
+}
+
+
+footer .location {
+    width: 100%;
+    margin-top: 10rem;
+    display:flex;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    color:rgb(197, 195, 195);
+}
+
+footer .location i {
+    align-self: center;
+}
+
+footer .location:hover {
+    color: var(--footer-hover-color);
+    cursor: pointer;
+}
+
+footer .location span {
+    padding: 0 1rem;
+}
+
+footer .extras {
+    width: 100%;
+    color:rgb(197, 195, 195);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .extras ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4.5rem 0 0;
+
+}
+
+footer .extras ul li {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+footer .extras span {
+    font-size: 1.3rem;
+    align-self: center;
+}
+
